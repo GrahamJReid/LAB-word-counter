@@ -14,6 +14,16 @@ const wordCounter = (value) => {
     error.innerHTML = "Please input text"; // UPDATE THIS
   }
 }
+function toggleClass(){
+  const bodyDark = document.getElementById('bodyDark');
+  bodyDark.classList.toggle('try');
+}
+//document.querySelector("#darkMode").onclick = function(){
+ // const body = document.querySelector("#bodyDark");
+ // body.style.backgroundColor = "black";
+ // body.style.color = "white";
+//}
+
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
