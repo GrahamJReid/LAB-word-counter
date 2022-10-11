@@ -14,17 +14,51 @@ const wordCounter = (value) => {
     error.innerHTML = "Please input text"; // UPDATE THIS
   }
 }
-function toggleClass(){
-  const bodyDark = document.getElementById('bodyDark');
-  bodyDark.classList.toggle('try');
-}
+//function toggleClass(){
+  //const bodyDark = document.getElementById('bodyDark');
+  //bodyDark.classList.toggle('try');
+//}
 //document.querySelector("#darkMode").onclick = function(){
- // const body = document.querySelector("#bodyDark");
- // body.style.backgroundColor = "black";
- // body.style.color = "white";
+  //const body = document.querySelector("#bodyDark");
+  //body.style.backgroundColor = "black";
+  //body.style.color = "white";
 //}
 
 
+const theToggle = document.getElementById("change-color");
+theToggle.toggleStatus = "on";
+
+function changeColor() {
+  switch (theToggle.toggleStatus) {
+    case "on":
+      theToggle.toggleStatus = "off";
+      theToggle.style.color = "white";
+      theToggle.style.backgroundColor = "black";
+      break;
+    case "off":
+      theToggle.toggleStatus = "on";
+      theToggle.style.color = "black";
+      theToggle.style.backgroundColor = "white";
+      break;
+  }
+}
+const theToggled = document.getElementById("change-button-color");
+theToggled.toggleStatus = "on";
+
+function changeButtonColor() {
+  switch (theToggled.toggleStatus) {
+    case "on":
+      theToggled.toggleStatus = "off";
+      theToggled.style.color = "white";
+      theToggled.style.backgroundColor = "black";
+      break;
+    case "off":
+      theToggled.toggleStatus = "on";
+      theToggled.style.color = "black";
+      theToggled.style.backgroundColor = "white";
+      break;
+  }
+}
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
